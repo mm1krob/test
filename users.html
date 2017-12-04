@@ -4,34 +4,50 @@
     <meta charset="UTF-8">
     <title>users</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="main.js"></script>
 </head>
 <body>
+
 <div class="container-fluid">
-<div id="head-menu">
-    меню з назвою
-</div>
-
-<div id="main-menu">
-
-    основне меню
-    <br />
-    <a href="index.html">головна</a><br />
-    <a href="users.html">користувачі</a>
-
-
-</div>
-
-    <div id="title">
-        <span>name</span><span>email</span>
+    <div id="head-menu" class="row">
+        <div class="col-sm-4">
+            <h2>Меню з назвою</h2>
+        </div>
+        <div class="col-sm-8">
+            <ul class="nav nav-pills">
+                <li class="nav-item"> <a class="nav-link" href="index.html">головна</a></li>
+                <li class="nav-item"> <a class="nav-link active" href="users.html">користувачі</a></li>
+            </ul>
+        </div>
     </div>
-    <div id="users">
-    </div>
-</div>
 
+    <div class="row">
+        <div id="main-menu" class="col-sm-3">
+            <h3>основне меню</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="index.html">головна</a></li>
+                <li class="nav-item"><a class="nav-link" href="users.html">користувачі</a></li>
+            </ul>
+        </div>
+
+        <div id="main-field" class="col-sm-9">
+            <table class="table table-striped .table-responsive-md">
+                <thead>
+                <tr>
+                    <th>full_name</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+</div>
 </body>
 </html>
