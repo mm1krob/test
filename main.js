@@ -13,7 +13,7 @@ $(document).ready(function(){
         for (let key in localStorage){
             let person = JSON.parse(localStorage.getItem(key));
             if(person.full_name=="")person.full_name='нема імені'
-            $('#users').append(`<p><span>${person.full_name}</span> <span>${person.email}</span></p>`);
+            $('tbody').append(`<tr><td>${person.full_name}</td> <td>${person.email}</td></tr>`);
         }
     }
 
