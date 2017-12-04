@@ -1,0 +1,19 @@
+#head-menu{
+    height: 30vh;
+    background-color: lightblue;
+}
+#main-menu{
+    float:left;
+    height: 70vh;
+    width: 20vw;
+    background-color: whitesmoke;
+}
+span{
+    display: inline-block;
+    width:  100px;
+}
+#title{
+    width: 600px;
+    color:blue;
+    border-bottom: 1px solid black;
+}
