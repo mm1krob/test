@@ -4,53 +4,67 @@
     <meta charset="utf-8">
     <title>some page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="main.js"></script>
 </head>
 <body>
-<div class="container-fluid">
-    <div id="head-menu">
-    меню з назвою
-    </div>
 
-    <div id="main-menu">
-    основне меню
-        <br />
-        <a href="index.html">головна</a><br />
-        <a href="users.html">користувачі</a>
+    <div class="container-fluid">
+            <div id="head-menu" class="row">
+            <div class="col-sm-4">
+                <h2>Меню з назвою</h2>
+            </div>
+            <div class="col-sm-8">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"> <a class="nav-link active" href="index.html">головна</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="users.html">користувачі</a></li>
+                </ul>
+            </div>
+            </div>
 
-    </div>
+        <div class="row">
+            <div id="main-menu" class="col-sm-3">
+                <h3>основне меню</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="users.html">користувачі</a></li>
+                </ul>
+            </div>
 
-    <div id="main-field">
-        <form>
+            <div id="main-field" class="col-sm-9">
+        <form class="form-control">
             <div class="form-group">
-                <br />
                 <label>
                 full name:
                 <input type="text" name="full_name" class="form-control">
                 </label>
-            <br />
-            <label>
+            </div>
+            <div class="form-group">
+                <label>
                 email:
                 <input type="text" name="email" class="form-control">
             </label>
-            <br />
-            <label>
+            </div>
+            <div class="form-group">
+                <label>
                 password:
                 <input type="password" name="password" class="form-control">
-            </label> <br />
-            <label>
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
                 role:
                 <input type="text" name="role" class="form-control">
-            </label><br />
-            <button type="button">створити</button>
+                </label>
             </div>
+            <button type="button" class="btn btn-primary">створити</button>
         </form>
+        </div>
+        </div>
     </div>
-</div>
-
 </body>
 </html>
