@@ -24,7 +24,7 @@ class DestinationParser
 		if  arg1=='' or arg2=='' 
 			raise ArgumentError, 'Argument must be field'
 		elsif arg1.is_a? Numeric  or arg2.is_a? Numeric
-			raise C, 'Argument is not string'
+			raise ArgumentError, 'Argument is not string'
 		end
 	end
 	
