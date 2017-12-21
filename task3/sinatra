@@ -1,0 +1,11 @@
+require 'net/http'
+require 'json'
+require 'sinatra'
+require_relative 'destinationHelper'
+require_relative 'DestinationParser'
+get '/distance_from=:city1?distance_to=:city2' do
+
+blala=DestinationParser::DestinationParser.new
+blala.distance_between_cities(params['city1'], params['city2'])
+
+end
